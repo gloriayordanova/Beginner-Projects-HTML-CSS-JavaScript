@@ -1,10 +1,10 @@
 var index = 0;
 
-function changeColors() {
-    var colors = ["pink", "yellow", "blue", "green", "red"];
+function changeColors(){
+var colors = ["purple", "green", "blue", "orange", "yellow"];
 
-    document.getElementsByTagName("body")[0].style.background = colors[index++];
+document.getElementsByTagName("body")[0].style.backgroundColor = colors[index++];
 
-    if(index > colors.length - 1)
-        index = 0;
+if(index > colors.length - 1) 
+    index = 0;
 }

@@ -1,6 +1,15 @@
 .container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
+    padding: 0 20px; /* Add padding to keep the buttons away from the edges */
+    position: relative;
+}
+
+.clear-btn {
+    position: absolute;
+    bottom: 20px; /* Adjust the value to position the button at the desired distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
 }

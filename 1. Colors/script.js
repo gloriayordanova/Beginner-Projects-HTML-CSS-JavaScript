@@ -1,10 +1,23 @@
-var index = 0;
+var index1 = 0;
 
-function changeColors() {
-    var colors = ["green", "purple", "red", "yellow", "blue"];
+function changeColors1() {
+    var colors1 = ["green", "purple", "red", "yellow", "blue"];
 
-    document.getElementsByTagName("body")[0].style.background = colors[index++];
+    document.getElementsByTagName("body")[0].style.background = colors1[index1++];
 
-    if(index > colors.length - 1) 
-    index = 0;
+    console.log(index1);
+    
+    if (index1 > colors1.length - 1) 
+        index1 = 0;
+}
+
+function changeColors2() {
+    var colors2 = ["green", "purple", "red", "yellow", "blue"];
+
+    document.getElementsByTagName("body")[0].style.background = colors2[index1--];
+
+    console.log(index1);
+
+    if(index1 < 0)
+        index1 = colors2.length - 1;
 }

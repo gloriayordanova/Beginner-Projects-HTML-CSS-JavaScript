@@ -1,23 +1,29 @@
-var index1 = 0;
+var index = 0; 
 
 function changeColors1() {
-    var colors1 = ["green", "purple", "red", "yellow", "blue"];
+    var colors = ["green", "purple", "red", "yellow", "blue"];
 
-    document.getElementsByTagName("body")[0].style.background = colors1[index1++];
-
-    console.log(index1);
-    
-    if (index1 > colors1.length - 1) 
-        index1 = 0;
+    document.getElementsByTagName("body")[0].style.background = colors[index++];
+   
+    if (index > colors.length - 1) 
+        index = 0;
 }
 
 function changeColors2() {
-    var colors2 = ["green", "purple", "red", "yellow", "blue"];
+    var colors = ["green", "purple", "red", "yellow", "blue"];
 
-    document.getElementsByTagName("body")[0].style.background = colors2[index1--];
+    index--;
+    if (index < 0)
+        index = colors.length - 1;
 
-    console.log(index1);
+    document.getElementsByTagName("body")[0].style.background = colors[index];
 
-    if(index1 < 0)
-        index1 = colors2.length - 1;
+}
+
+function clearColors() {
+    // Reset the background color to its original state
+    document.body.style.backgroundColor = "white"; // Set to the initial state
+
+    // If there are other things to reset, add them here
+    index = 0; // Reset the color index if needed
 }

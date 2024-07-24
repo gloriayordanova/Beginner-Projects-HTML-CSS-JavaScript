@@ -24,8 +24,7 @@ function changeColorButton() {
     }
    
     document.getElementById("hex-figure").innerHTML = hexCode;
-    var button = document.querySelector(".change-color-button");
-    button.style.backgroundColor = "#" + hexCode;
+    document.querySelector(".change-color-button").style.backgroundColor = "#" + hexCode;
 
 }
 

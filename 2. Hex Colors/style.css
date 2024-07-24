@@ -5,7 +5,6 @@ body{
 }
 
 .container{
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,19 +13,17 @@ body{
 }
 
 .hex-code{
-    border: 1px solid black;
     text-align: center;
 }
 
 .hex-code h1{
-    border: 1px solid black;
     text-transform: uppercase;
     font-size: 2rem;
     animation: changeColor 5s infinite alternate;
+    padding-top: 5%;
 }
 
 .hex-code h2{
-    border: 1px solid black;
     font-size: 2rem;
     margin-top: 15%;
 }
@@ -48,3 +45,14 @@ body{
         font-size: 1.5rem;
     }
 }
+
+.container-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%; 
+    padding-top: 200px; 
+}
+
+

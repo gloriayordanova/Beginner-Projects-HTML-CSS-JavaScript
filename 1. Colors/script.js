@@ -1,5 +1,5 @@
-var index = 0; 
-var colors = ["green", "purple", "red", "yellow", "blue"];
+let index = 0; 
+let colors = ["green", "purple", "red", "yellow", "blue"];
 
 function callColors() {
     document.body.style.background = colors[index];

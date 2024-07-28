@@ -5,8 +5,8 @@ body{
 .container{
     display: flex;
     width: 900px;
-    height: 100vh;;
-    text-align: center;
+    height: 70vh;
+    padding-top: 100px;
 }
 
 .quotes{                                                        
@@ -16,7 +16,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin-top: 130px;
     border: 0 50px;
     color: gray;
     background-color: #f4edea;
@@ -25,10 +25,19 @@ body{
 
 .quotes p, .quotes h3 {
     font-size: 1.5rem;
+    text-align: center;
 }
 
 @media (max-width: 450px){
     .quotes p, .quotes h3 {
         font-size: 1rem;
     }
+}
+
+.generateButton{
+    margin: 10px;
+}
+
+.clearButton{
+    margin: 10px;
 }

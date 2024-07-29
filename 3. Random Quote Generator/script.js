@@ -19,3 +19,8 @@ function generate(){
     document.getElementById("quote").innerHTML = quote;
     document.getElementById("author").innerHTML = author;
 }
+
+function clearContent(){
+    document.getElementById("quote").innerHTML = "Hello World";
+    document.getElementById("author").innerHTML = "Codeboxx";
+}

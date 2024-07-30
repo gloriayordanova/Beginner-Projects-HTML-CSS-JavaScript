@@ -1,6 +1,6 @@
 body{
     background: linear-gradient(#b8dafc, white);
-    overflow: auto; /*this controlls scrollbars*/
+    overflow: auto; 
 }
 
 button{
@@ -31,7 +31,7 @@ button:hover{
     background: whitesmoke;
     border-radius: 5px;
     width: 500px;
-    height: auto; /*if the user enters a long message we want this container to be able to adjust the words*/
+    height: auto; 
     margin: auto;
     padding: 0 20px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); 

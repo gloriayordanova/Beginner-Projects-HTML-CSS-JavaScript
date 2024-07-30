@@ -27,3 +27,9 @@ JavaScript
 -създай функция, която да вземе id-to message-output от HTML файла и да бъде равен на messageInput със стойност value
 -след това този messageInput със стойност value да бъде равен на празен стринг
 -след това създай eventListener за messageInput-а, който като натиснещ enter да прави същото каквото главната getMessage() функция
+
+
+Improvements:
+1. if text too long, to be wrapped;
+2. Result field with border which shows the result in white field
+3. instead of Submit write capital case and create another button for lower case

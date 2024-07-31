@@ -7,13 +7,13 @@ button{
     width: fit-content;
     padding: 8px;
     cursor: pointer;
-    border: 2px solid lightgray;
-    border-radius: 5px;    
+    border: 1px solid lightgray;
+    border-radius: 5px;
     background: whitesmoke;
 }
 
 button:hover{
-    background: rgba(128, 128, 128, 0.5);
+    background: rgba(211, 211, 211, 0.5);
 }
 
 .container{
@@ -27,18 +27,18 @@ button:hover{
 }
 
 .message{
-    border-radius: 1px solid lightgray;
+    border: 1px splid lightgray;
     background: whitesmoke;
     border-radius: 5px;
     width: 500px;
     height: auto;
     margin: auto;
     padding: 0 5px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 4px 0px gray;
 }
 
 .message input{
-    width: 90%;
+    width: 450px;
     padding: 8px 0;
     border-radius: 5px;
     border: 1px solid lightgray;
@@ -46,88 +46,8 @@ button:hover{
     border-bottom-left-radius: 0;
 }
 
-@media(max-width: 480px){
+@media (max-width: 480px) {
     .message input{
-        width: 80%;
+        width: 400px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* body{
-    background: linear-gradient(#b8dafc, white);
-    overflow: auto; 
-}
-
-button{
-    width: fit-content;
-    padding: 8px;
-    cursor: pointer;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    background: whitesmoke;
-}
-
-button:hover{
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.container{
-    border:1px solid black;
-    width: 95%;
-    height: 100vh;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.message{
-    border:1px solid lightgray;
-    background: whitesmoke;
-    border-radius: 5px;
-    width: 500px;
-    height: auto; 
-    margin: auto;
-    padding: 0 20px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); 
-}
-
-.message input{
-    width: 90%;
-    padding: 8px 0;
-    border-radius: 5px;
-    border: 1px solid lightgray;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-@media(max-width: 480px) {
-    .message input{
-        width: 82%;
-    }
-} */

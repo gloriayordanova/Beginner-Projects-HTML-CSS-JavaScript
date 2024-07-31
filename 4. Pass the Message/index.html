@@ -20,9 +20,13 @@
                 <button style="border-radius: 5px 0 0 5px;"><i class="fa-regular fa-envelope-open"></i></button><input id="message-input" type="text">
             </p>
             <p>
-                <button onclick="getMessage()">Submit</button>
+                <button id="upperCaseBtn" onclick="getMessage()">Upper Case</button>
+                <button id="lowerCaseBtn" onclick="getMessage()">Lower Case</button>
             </p>
-            <p id="message-output" style="text-align: center; text-transform: uppercase;"></p>
+            <label for="message-output">Result:
+                input
+                <p id="message-output" style="text-align: center; text-transform: uppercase; display: inline; overflow-wrap: break-word;"></p>
+            </label>
         </div>
     </div>
     <script src="script.js"></script>

@@ -17,7 +17,6 @@ button:hover{
 }
 
 .container{
-    border: 1px solid black;
     width: 95%;
     height: 100vh;
     margin: auto;
@@ -50,4 +49,13 @@ button:hover{
     .message input{
         width: 400px;
     }
+}
+
+#upperCaseBtn {
+    margin-left: 75px;
+    margin-right: 150px;
+}
+
+#lowerCaseBtn {
+    margin-left: auto;
 }

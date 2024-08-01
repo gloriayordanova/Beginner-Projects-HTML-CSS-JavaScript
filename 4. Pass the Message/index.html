@@ -15,17 +15,18 @@
                 <p style="border-bottom: 1px solid rgba(211, 211, 211, 0.5);"></p>
             </p>
             <p>
-                <label for="message-input">Enter a message</label>
+                <label style="font-size: large;" for="message-input">Enter a message</label>
+                <label style="font-size: small;" for="message-input">(10 characters max)</label>
                 <br>
-                <button style="border-radius: 5px 0 0 5px;"><i class="fa-regular fa-envelope-open"></i></button><input id="message-input" type="text">
+                <button style="border-radius: 5px 0 0 5px;"><i class="fa-regular fa-envelope-open"></i></button><input id="message-input" type="text" maxlength="10" placeholder="Type here...">
             </p>
             <p>
-                <button id="upperCaseBtn" onclick="getMessage()">Upper Case</button>
-                <button id="lowerCaseBtn" onclick="getMessage()">Lower Case</button>
+                <button id="upperCaseBtn" onclick="getMessageUpperCase()">Upper Case</button>
+                <button id="lowerCaseBtn" onclick="getMessageLoweCase()">Lower Case</button>
             </p>
             <label for="message-output">Result:
-                input
-                <p id="message-output" style="text-align: center; text-transform: uppercase; display: inline; overflow-wrap: break-word;"></p>
+                <p id="message-output-upper-case" style="text-align: center; text-transform: uppercase; display: inline; overflow-wrap: break-word;"></p>
+                <p id="message-output-lower-case" style="text-align: center; text-transform: lowercase; display: inline; overflow-wrap: break-word;"></p>
             </label>
         </div>
     </div>

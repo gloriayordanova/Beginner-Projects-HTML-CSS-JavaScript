@@ -1,5 +1,5 @@
 body{
-    background: #fcfc62;
+    background:#fcfc62;
 }
 
 .container{
@@ -15,16 +15,16 @@ body{
 .counter{
     border: 5px solid black;
     width: 600px;
-    height: 350px;
+    height: 400px;
     margin: auto;
-    padding: 25px;
+    padding: 8px;
     text-align: center;
-    background: #feffef;
+    background-color: #feffef;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column;;
 }
 
 .counter h1{
@@ -32,5 +32,5 @@ body{
 }
 
 #count{
-    font-size: 9rem;
+    font-size: 10rem;
 }

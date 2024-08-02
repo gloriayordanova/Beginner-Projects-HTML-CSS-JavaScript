@@ -10,12 +10,16 @@
 <body>
     <div class="container">
         <div class="counter">
-            <h1>COUNTER</h1>
+            <h1>COUNTER, MULTIPLY(X2), DIVIDE (X2)</h1>
             <h1 id="count">0</h1>
             <div>
-                <button onclick="changeCount(1)" type="button" class="btn btn-dark">Increase</button>
-                <button onclick="changeCount(-1)" type="button" class="btn btn-dark">Decrease</button>
-                <button onclick="changeCount()" type="button" class="btn btn-dark">Multiply</button>
+                <button onclick="changeCount(1)" type="button" class="btn btn-dark">+1</button>
+                <button onclick="changeCount(-1)" type="button" class="btn btn-dark">-1</button>
+                <button onclick="changeCount(0, 'multiply')" type="button" class="btn btn-dark">X 2</button>
+                <button onclick="changeCount(0, 'divide')" type="button" class="btn btn-dark">/ 2</button>
+            </div>
+            <div class="clear">
+                <button onclick="changeCount(0, 'clear')" type="button" class="btn btn-success">Clear</button>
             </div>
         </div>
     </div>

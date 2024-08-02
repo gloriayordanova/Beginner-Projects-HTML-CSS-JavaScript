@@ -1,9 +1,8 @@
 body{
-    background:#fcfc62;
+    background:#1a1a1a6a;
 }
 
 .container{
-    border: 1px solid black;
     width: 95%;
     height: 100vh;
     margin: auto;
@@ -14,17 +13,17 @@ body{
 
 .counter{
     border: 5px solid black;
-    width: 600px;
+    width: auto;
     height: 400px;
     margin: auto;
-    padding: 8px;
+    padding: 50px;
     text-align: center;
-    background-color: #feffef;
+    background-color: #d7d7d7fc;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;;
+    flex-direction: column;
 }
 
 .counter h1{
@@ -32,5 +31,13 @@ body{
 }
 
 #count{
-    font-size: 10rem;
+    font-size: 6rem;
+}
+
+.clear button{
+    margin-top: 20px;
+    width: 150px; 
+    height: 75px; 
+    border-radius: 20px;
+    font-size: 30px;
 }

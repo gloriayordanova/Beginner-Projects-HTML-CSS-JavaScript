@@ -14,6 +14,8 @@ function show_image(i){
 
     for(let i = 0; i < dots.length; i++){
         dots[i].className = dots[i].className.replace(" active", ""); //This loop removes the " active" class from all dots.
+        //AlsoWhen the code dots[index].className += " active"; executes, it appends " active" to the current class name of the dot at the specified index. 
+        //The space ensures that "active" is added as a separate class and not concatenated with the existing class names. For example:
         //This ensures that only one dot will be highlighted at a time. By replacing "active" with an empty string, it effectively removes the active class if it exists.;
     }
 

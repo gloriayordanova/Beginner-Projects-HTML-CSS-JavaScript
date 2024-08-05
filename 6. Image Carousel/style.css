@@ -1,9 +1,9 @@
-.image{
+/* .image{
     display: none;
-}
+} */
 
 
-/* .container{
+.container{
     width: 95%;
     height: 100vh;
     margin: auto;
@@ -78,4 +78,4 @@
 @keyframes fade{ 
     from {opacity: .4}
     to{opacity: 1}
-    }  */
+    } 

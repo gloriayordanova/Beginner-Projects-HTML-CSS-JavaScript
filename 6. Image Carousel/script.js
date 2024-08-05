@@ -25,7 +25,9 @@ function show_image(i){
         index = images.length - 1;
     }
 
-    images[index].style.display = "block";
+    images[index].style.display = "block"; //This line sets the display property of the image at the current index to "block", 
+    //making it visible. In CSS, display: block is used to display an element as a block-level element, which means it will take up the full width available
+    //and start on a new line.;
     dots[index].className += " active"; //After determining which image should be shown (based on the index variable),
     //this line adds the " active" class to the corresponding dot. The += operator appends the " active" class to the current class list of that dot, which highlights it.
 }

@@ -8,9 +8,6 @@
 
 
 
-
-
-
 /* .container{
     width: 95%;
     height: 100vh;
@@ -84,6 +81,6 @@
 }
 
 @keyframes fade{ 
-    from {opacity: .4}
+    from{opacity: .4}
     to{opacity: 1}
     }  */

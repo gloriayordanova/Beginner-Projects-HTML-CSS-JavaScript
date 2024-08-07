@@ -1,7 +1,12 @@
+.maincontainer{
+    display: flex;
+    background: linear-gradient(#f7e89f, #b13d3c);
+}
+
 .container, .container2{
     width: 95%;
-    height: 100%;
-    margin: auto;
+    height: 100vh;
+    margin: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,8 +19,8 @@
 }
 
 .uniform-image {
-    width: 1924px; 
-    height: 1200px; 
+    width: 2500px; 
+    height: 2000px; 
     object-fit: cover; 
 }
 
@@ -26,7 +31,7 @@
     top: 43%;
     left: 0;
     cursor: pointer;
-    padding: 16px;
+    padding: 25px;
     font-weight: bold;
     font-size: 1rem;
     transition: 0.6s ease;
@@ -41,7 +46,7 @@
     top: 43%;
     right: 0;
     cursor: pointer;
-    padding: 16px;
+    padding: 25px;
     font-weight: bold;
     font-size: 1rem;
     transition: 0.6s ease;
@@ -54,12 +59,12 @@
 }
 
 .dot, .dot2{
-    width: 15px;
-    height: 15px;
+    width: 50px;
+    height: 50px;
     background-color: #bbb;
     display: inline-block;
     border-radius: 50%;
-    margin: 0 2px;
+    margin: 15px;
 }
 
 .active, .active2{
@@ -76,81 +81,7 @@
     to{opacity: 1};
 }
 
-
-
-
-
-
-
-
-/* .container{
-    width: 95%;
-    height: 100vh;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
+#Lamborgini{
+    text-align: center;
+    font-size: 100px;
 }
-
-.image{
-    display: none;
-}
-
-#prev{
-    position: absolute;
-    color: white;
-    background-color: black;
-    top: 43%;
-    left: 0;
-    cursor: pointer;
-    padding: 16px;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-#next{
-    position: absolute;
-    color: white;
-    background-color: black;
-    top: 43%;
-    right: 0;
-    cursor: pointer;
-    padding: 16px;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-#prev:hover, #next:hover{
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.dot{
-    width: 15px;
-    height: 15px;
-    background-color: #bbb;
-    display: inline-block;
-    border-radius: 50%;
-    margin: 0 2px;
-}
-
-.active{
-    background-color: #717171;
-    transition: background-color 0.6s ease;
-}
-
-.fade{
-    animation: fade 1.5s;
-}
-
-@media fade{
-    from{opacity: 0.4};
-    to{opacity: 1};
-} */

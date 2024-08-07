@@ -13,6 +13,12 @@
     display: none;
 }
 
+.uniform-image {
+    width: 1924px; 
+    height: 1200px; 
+    object-fit: cover; 
+}
+
 #prev, #prev2{
     position: absolute;
     color: white;

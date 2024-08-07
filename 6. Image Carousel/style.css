@@ -1,6 +1,6 @@
-.container{
+.container, .container2{
     width: 95%;
-    height: 100vh;
+    height: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -9,11 +9,11 @@
     position: relative;
 }
 
-.image{
+.image, .image2{
     display: none;
 }
 
-#prev{
+#prev, #prev2{
     position: absolute;
     color: white;
     background-color: black;
@@ -28,7 +28,7 @@
     user-select: none;
 }
 
-#next{
+#next, #next2{
     position: absolute;
     color: white;
     background-color: black;
@@ -43,11 +43,11 @@
     user-select: none;
 }
 
-#prev:hover, #next:hover{
+#prev:hover, #next:hover, #prev2:hover, #next2Lhover{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.dot{
+.dot, .dot2{
     width: 15px;
     height: 15px;
     background-color: #bbb;
@@ -56,19 +56,21 @@
     margin: 0 2px;
 }
 
-.active{
+.active, .active2{
     background-color: #717171;
     transition: background-color 0.6s ease;
 }
 
-.fade{
+.fade, .fade2{
     animation: fade 1.5s;
 }
 
-@media fade{
+@media fade, fade2{
     from{opacity: 0.4};
     to{opacity: 1};
 }
+
+
 
 
 

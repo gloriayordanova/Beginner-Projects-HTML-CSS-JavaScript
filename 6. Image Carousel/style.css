@@ -1,14 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-/* .container{
+.container{
     width: 95%;
     height: 100vh;
     margin: auto;
@@ -55,16 +45,11 @@
 
 #prev:hover, #next:hover{
     background-color: rgba(0, 0, 0, 0.5);
-};
-
-.dots{
-    text-align: center;
-    margin: 2%;
 }
 
 .dot{
-    height: 15px;
     width: 15px;
+    height: 15px;
     background-color: #bbb;
     display: inline-block;
     border-radius: 50%;
@@ -80,7 +65,7 @@
     animation: fade 1.5s;
 }
 
-@keyframes fade{ 
-    from{opacity: .4}
-    to{opacity: 1}
-    }  */
+@media fade{
+    from{opacity: 0.4};
+    to{opacity: 1};
+}

@@ -8,6 +8,7 @@ body{
 
 .container{
     border: 1px solid black;
+
     width: 95%;
     height: 100vh;
     margin: auto;
@@ -33,7 +34,7 @@ body{
     font-size: 5rem;
 }
 
-@media(max-width: 768px){
+@media(max-width:768px){
     #bar1, #bar2{
         display: none;
     }
@@ -48,7 +49,7 @@ body{
     }
 }
 
-@media(max-width:480px){
+@media(max-width: 480px){
     .digitalClock h1{
         font-size: 4rem;
     }

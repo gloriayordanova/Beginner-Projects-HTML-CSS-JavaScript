@@ -3,12 +3,10 @@
 body{
     font-family: "Poiret One", sans-serif;
     overflow: hidden;
-    background: conic-gradient(from 90deg at 25% -10%, #ff4500, #d3f340, #7bee85, #afeeee, #7bee85);
+    background: conic-gradient(from -.5turn at bottom right, deeppink, cyan, rebeccapurple);
 }
 
 .container{
-    border: 1px solid black;
-
     width: 95%;
     height: 100vh;
     margin: auto;
@@ -18,7 +16,7 @@ body{
 }
 
 .digitalClock{
-    border: 1px solid black;
+    text-align: center;
     width: fit-content;
     margin: auto;
     padding: 10px;

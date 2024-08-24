@@ -22,7 +22,7 @@ function addItem(){
 
     let label = document.createElement("label");
     label.innerHTML = userInput.value;
-    label.style.margin = -160; // Optional, adds space between checkbox and text
+    label.style.margin = -160;
     label.style.fontSize = 30;
 
     checkbox.addEventListener("change", function() {

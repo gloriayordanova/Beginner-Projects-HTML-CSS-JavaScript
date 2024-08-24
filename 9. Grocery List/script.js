@@ -18,7 +18,7 @@ function addItem(){
     let checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.style.marginLeft = -150;
-    checkbox.style.scale = 2;
+    checkbox.style.scale = 1;
 
     let label = document.createElement("label");
     label.innerHTML = userInput.value;

@@ -13,6 +13,7 @@ userInput.addEventListener("keydown", function(event){
     }
 });
 
+
 function addItem(){
     let itemContainer = document.createElement("div");
     let checkbox = document.createElement("input");

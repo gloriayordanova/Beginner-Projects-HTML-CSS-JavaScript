@@ -47,7 +47,6 @@ function addItem(){
 
 
 
-
 // function addItem(){
 //     let itemContainer = document.createElement("div");
 //     let checkbox = document.createElement("input");

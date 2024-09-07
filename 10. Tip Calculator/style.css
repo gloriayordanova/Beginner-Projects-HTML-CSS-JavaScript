@@ -16,14 +16,14 @@ body{
 
 .calculator{
     border: 1px solid lightgray;
-    background: whitesmoke;
+    background-color: whitesmoke;
     border-radius: 5px;
     width: 400px;
     margin: auto;
     padding: 0 25px;
     font-size: 1rem;
     font-weight: 100;
-    box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
 .calculator input{
@@ -61,40 +61,59 @@ body{
     border: 1px solid lightgray;
 }
 
+#tip-amount{
+    visibility: hidden; 
+    background-color: limegreen;
+    padding: 16px;
+    position: fixed;
+    min-width: 250px;
+    margin: auto; 
+    color: white;
+    bottom: 30px;
+    text-align: center;
+    border-radius: 2px;
+} 
 
+#tip-amount.show{
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
 
+@-webkit-keyframes fadein{
+    from{bottom: 0; opacity: 0;}
+    to{bottom: 30px; opacity: 1;}
+}
 
+@keyframes fadein{
+    from{bottom: 0; opacity: 0;}
+    to{bottom: 30px; opacity: 1;}
+}
 
+@-webkit-keyframes fadeout{
+    from{bottom: 30px; opacity: 1;}
+    to{bottom: 0; opacity: 0;}
+}
 
+@keyframes fadeout{
+    from{bottom: 30px; opacity: 1;}
+    to{bottom: 0; opacity: 0;}
+}
 
+@media(max-width: 480px){
+    .calculator input{
+        width: 85%
+    }
+    .calculator button{
+        width: 15%
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media(max-width: 320px){
+    .calculator input{
+        width: 80%
+    }
+}
 
 
 
@@ -166,8 +185,8 @@ body{
 }
 
 #tip-amount{
-    /* visibility: hidden;  */
-    /* background-color: limegreen;
+    visibility: hidden; 
+    background-color: limegreen;
     padding: 16px;
     position: fixed;
     min-width: 250px;
@@ -176,9 +195,9 @@ body{
     bottom: 30px;
     text-align: center;
     border-radius: 2px;
-} */
+} 
 
-/* #tip-amount.show{
+#tip-amount.show{
     visibility: visible;
     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;

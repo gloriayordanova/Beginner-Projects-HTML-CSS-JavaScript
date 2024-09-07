@@ -1,7 +1,7 @@
 body{
     height: 100vh;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: conic-gradient(from -90deg at 50% 105%, white, orchid);;
+    background: conic-gradient(from -90deg at 50% 105%, white, orchid);
 }
 
 .container{
@@ -16,7 +16,7 @@ body{
 
 .calculator{
     border: 1px solid lightgray;
-    background-color: whitesmoke;
+    background: whitesmoke;
     border-radius: 5px;
     width: 400px;
     margin: auto;
@@ -45,7 +45,7 @@ body{
     border: 1px solid lightgray;
     border-radius: 5px;
     border-top-right-radius: 0;
-    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     background-color: whitesmoke;
 }
 
@@ -61,70 +61,47 @@ body{
     border: 1px solid lightgray;
 }
 
-#tip-amount{
-    visibility: hidden;
-    background-color: limegreen;
-    padding: 16px;
-    position: fixed;
-    min-width: 250px;
-    margin: auto;
-    color: white;
-    bottom: 30px;
-    text-align: center;
-    border-radius: 2px;
-}
-
-#tip-amount.show{
-    visibility: visible;
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
 
 
-@-webkit-keyframes fadein{
-    from{bottom: 0; opacity: 0;}
-    to{bottom: 30px; opacity: 1;}
-}
 
-@keyframes fadein{
-    from{bottom: 0; opacity: 0;}
-    to{bottom: 30px; opacity: 1;}
-}
 
-@-webkit-keyframes fadeout{
-    from{bottom: 30px; opacity: 1;}
-    to{bottom: 0; opacity: 0;}
-}
 
-@keyframes fadeout{
-    from{bottom: 30px; opacity: 1;}
-    to{bottom: 0; opacity: 0;}
-}
 
-@media(max-width: 480px){
-    .calculator input{
-        width: 85%;
-    }
-    .calculator button{
-        width: 15%;
-    }
-}
 
-@media(max-width: 320px){
-    .calculator input{
-        width: 80%;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
-
-
-
-
-
-
-
-
-
 /* body{
     height: 100vh;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

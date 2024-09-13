@@ -8,7 +8,6 @@
 
 body{
     font-family: "Nunito", sans-serif;
-
     font-size: 1rem;
     background-color: whitesmoke;
 }
@@ -23,7 +22,7 @@ button{
     cursor: pointer;
     border: 1px solid lightgray;
     border-radius: 5px;
-    background-color: whitesmoke;
+    background-color: whitesmoke; 
 }
 
 button:hover{
@@ -40,8 +39,8 @@ button:hover{
     justify-content: space-between;
     width: 100%;
     margin: auto;
-    padding: 20px 0;
-    background-color: white;
+    padding: 20px 0px;
+    background-color: white; 
 }
 
 .nav button{
@@ -65,6 +64,7 @@ button:hover{
     border: 1px solid lightgray;
 }
 
+ 
 .create-box button{
     width: fit-content;
 }
@@ -83,7 +83,7 @@ button:hover{
 .flashcard{
     width: 370px;
     height: 200px;
-    word-wrap: break-word;
+    word-wrap: break-word; 
     margin: 10px;
     background-color: white;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
@@ -116,4 +116,4 @@ button:hover{
     .flashcard{
         width: 100%;
     }
-}
+} 

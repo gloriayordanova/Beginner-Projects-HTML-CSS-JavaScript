@@ -4,7 +4,7 @@ const question = document.getElementById("question");
 const answer = document.getElementById("answer");
 let contentArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : []; //1
 
-contentArray.forEach(divMaker); //8  за локал сторидж това го създаваме като затворим и после отворим страницата да се показва
+contentArray.forEach(divMaker); //8  за локал сторидж това го създаваме като затворим и после отворим страницата да се показва.
 
 function divMaker(text) { //7 
     //immmediately look at 8

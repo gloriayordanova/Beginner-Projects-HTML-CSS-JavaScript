@@ -6,7 +6,7 @@ let contentArray = localStorage.getItem('items') ? JSON.parse(localStorage.getIt
 
 contentArray.forEach(divMaker); //8  за локал сторидж това го създаваме като затворим и после отворим страницата да се показва
 
-function divMaker(text) { //7 // we call it that way div, because every flashcard is going to be basically a div element.
+function divMaker(text) { //7 
     //immmediately look at 8
     let div = document.createElement("div"); //9
     let h2Question = document.createElement("h2");
@@ -40,12 +40,9 @@ function addFlashcard() { //5
         'my_answer': answer.value
     };
 
-    contentArray.push(flashcardInfo); //6  flashcardInfo is the name of the dictionary
-    localStorage.setItem('items', JSON.stringify(contentArray));  // we are giving our localStorage a key of items. //this is how we add contentArray to local storage
-    divMaker(contentArray[contentArray.length - 1]); //we want to display the flashcard on the screen, so we are gonna create function called divMaker
-    //and we have to pass it this particular data from the flashcard so it could create it,
-    //so let's pass the content array. Length - 1 is the last index of the array which is the one we have just filled in with this info.
-    //So, this is the one we want to send over to this function
+    contentArray.push(flashcardInfo); //6 
+    localStorage.setItem('items', JSON.stringify(contentArray));  
+    divMaker(contentArray[contentArray.length - 1]); 
     question.value = '';
     answer.value = '';
 }

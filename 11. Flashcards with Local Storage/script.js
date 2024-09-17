@@ -31,7 +31,7 @@ function divMaker(text) { //7
         }
     });
 
-    flashcards.appendChild(div); //we are adding this div element to the flashcards container
+    flashcards.appendChild(div); 
 }
 
 function addFlashcard() { //5

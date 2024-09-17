@@ -4,7 +4,7 @@ const question = document.getElementById("question");
 const answer = document.getElementById("answer");
 let contentArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : []; //1
 
-contentArray.forEach(divMaker); //8  за локал сторидж това го създаваме като затворим и после отворим страницата да се показва.
+contentArray.forEach(divMaker); //8 
 
 function divMaker(text) { //7 
     //immmediately look at 8
@@ -12,9 +12,9 @@ function divMaker(text) { //7
     let h2Question = document.createElement("h2");
     let h2Answer = document.createElement("h2");
 
-    div.className = 'flashcard'; //for that flashcard look at the css
+    div.className = 'flashcard'; 
 
-    h2Question.setAttribute("style", "border-top:1px solid red; padding: 15px; margin-top:30px"); //setAttribute will allow us to add many css features
+    h2Question.setAttribute("style", "border-top:1px solid red; padding: 15px; margin-top:30px");
     h2Question.innerHTML = text.my_question;
 
     h2Answer.setAttribute("style", "text-align:center; display:none; color:red");
@@ -48,7 +48,7 @@ function addFlashcard() { //5
 }
 
 function delFlashCards() { //2
-    localStorage.clear(); //can also do it localStorage.removeItem('items');
+    localStorage.clear(); 
     flashcards.innerHTML = '';
     contentArray = [];
 }

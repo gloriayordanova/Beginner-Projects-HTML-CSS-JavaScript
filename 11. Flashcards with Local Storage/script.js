@@ -2,13 +2,12 @@ const flashcards = document.getElementsByClassName("flashcards")[0];
 const createBox = document.getElementsByClassName("create-box")[0];
 const question = document.getElementById("question");
 const answer = document.getElementById("answer");
-let contentArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : []; //1
+let contentArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : []; 
 
-contentArray.forEach(divMaker); //8 
+contentArray.forEach(divMaker); 
 
-function divMaker(text) { //7 
-    //immmediately look at 8
-    let div = document.createElement("div"); //9
+function divMaker(text) {  
+    let div = document.createElement("div"); 
     let h2Question = document.createElement("h2");
     let h2Answer = document.createElement("h2");
 
@@ -34,29 +33,29 @@ function divMaker(text) { //7
     flashcards.appendChild(div); 
 }
 
-function addFlashcard() { //5
+function addFlashcard() { 
     let flashcardInfo = {
         'my_question': question.value,
         'my_answer': answer.value
     };
 
-    contentArray.push(flashcardInfo); //6 
+    contentArray.push(flashcardInfo); 
     localStorage.setItem('items', JSON.stringify(contentArray));  
     divMaker(contentArray[contentArray.length - 1]); 
     question.value = '';
     answer.value = '';
 }
 
-function delFlashCards() { //2
+function delFlashCards() { 
     localStorage.clear(); 
     flashcards.innerHTML = '';
     contentArray = [];
 }
 
-function showCreateCardBox() { //4
+function showCreateCardBox() { 
     createBox.style.display = "block";
 }
 
-function hideCreateBox() { //3
+function hideCreateBox() { 
     createBox.style.display = "none";
 }

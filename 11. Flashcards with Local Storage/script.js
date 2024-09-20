@@ -13,7 +13,7 @@ function divMaker(text) {
 
     div.className = 'flashcard'; 
 
-    h2Question.setAttribute("style", "border-top:1px solid red; padding: 15px; margin-top:30px");
+    h2Question.setAttribute("style", "border-top:1px solid ; padding: 15px; margin-top:30px");
     h2Question.innerHTML = text.my_question;
 
     h2Answer.setAttribute("style", "text-align:center; display:none; color:red");

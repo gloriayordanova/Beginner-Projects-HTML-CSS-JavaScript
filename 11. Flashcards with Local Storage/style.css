@@ -15,7 +15,7 @@ body{
 }
 
 body::after {
-    content: "";
+    content: "FYI: Click on the flashcard above to see your answer.";
     position: absolute;
     bottom: auto;
     left: 0;
@@ -25,6 +25,7 @@ body::after {
     border-top: 2px dashed red;
     pointer-events: none;
     z-index: 1;
+    text-align: center;
 }
 
 header{
@@ -32,6 +33,7 @@ header{
 }
 
 button{
+    font: bold;
     padding: 8px;
     outline: none;
     cursor: pointer;
@@ -57,6 +59,8 @@ button:hover{
 
 .bottom-text button{
     width: 100%;
+    font-size: large;
+    font-weight: bolder;
 }
 
 .bottom-text button:hover{

@@ -2,6 +2,7 @@ const flashcards = document.getElementsByClassName("flashcards")[0];
 const createBox = document.getElementsByClassName("create-box")[0];
 const question = document.getElementById("question");
 const answer = document.getElementById("answer");
+const calculate = document.getElementById("calculateFlashcards");
 let contentArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : []; 
 
 contentArray.forEach(divMaker); 
@@ -13,7 +14,7 @@ function divMaker(text) {
 
     div.className = 'flashcard'; 
 
-    h2Question.setAttribute("style", "border-top:1px solid ; padding: 15px; margin-top:30px");
+    h2Question.setAttribute("style", "border-top:1px solid red; padding: 15px; margin-top:30px");
     h2Question.innerHTML = text.my_question;
 
     h2Answer.setAttribute("style", "text-align:center; display:none; color:red");
@@ -58,4 +59,23 @@ function showCreateCardBox() {
 
 function hideCreateBox() { 
     createBox.style.display = "none";
+}
+
+function calculateNumberFlashCards(){
+    const numberOfFlashcards = flashcards.getElementsByClassName('flashcard').length;
+    
+    // Display the result in the console or on the screen
+    console.log(`Number of flashcards: ${numberOfFlashcards}`);
+    
+    // Optionally, display the result in an HTML element
+    let displayElement = document.getElementById("flashcardCount");
+    
+    if (!displayElement) {
+        // If the display element doesn't exist, create it
+        displayElement = document.createElement("p");
+        displayElement.id = "flashcardCount";
+        flashcards.parentNode.insertBefore(displayElement, flashcards);
+    }
+    
+    displayElement.innerHTML = `Number of flashcards: ${numberOfFlashcards}`;
 }

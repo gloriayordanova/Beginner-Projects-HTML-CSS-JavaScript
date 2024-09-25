@@ -63,18 +63,11 @@ function hideCreateBox() {
 function calculateNumberFlashCards(){
     const numberOfFlashcards = flashcards.getElementsByClassName('flashcard').length;
     
-    // Display the result in the console or on the screen
     console.log(`Number of flashcards: ${numberOfFlashcards}`);
     
-    // Optionally, display the result in an HTML element
     let displayElement = document.getElementById("flashcardCount");
     
     if (!displayElement) {
-        // If the display element doesn't exist, create it
-        /*
-        flashcards.parentNode.insertBefore(displayElement, flashcards): This inserts the newly created <p> element into the DOM. Specifically, it inserts it just before the flashcards container (the parent of the flashcards element is used to ensure correct placement).
-This ensures that the newly created paragraph is added to the page, and it will be used to display the number of flashcards.
-        */
         displayElement = document.createElement("p");
         displayElement.id = "flashcardCount";
         flashcards.parentNode.insertBefore(displayElement, flashcards);

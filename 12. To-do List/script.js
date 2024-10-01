@@ -1,14 +1,13 @@
 const toDoItems = document.getElementsByClassName("to-do-items")[0];
 const input = document.getElementById("input");
-const trashIcon = document.getElementById("trash");
 
-input.addEventListener("keydown", function(event){ //1
+input.addEventListener("keydown", function(event){ 
     if(event.key == "Enter"){
         addItem();
     }
 });
 
-function addItem(){ //2
+function addItem(){ 
     let divParent = document.createElement("div");
     let divChild = document.createElement("div");
     let checkIcon = document.createElement("i");

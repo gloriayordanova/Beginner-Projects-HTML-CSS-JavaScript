@@ -19,7 +19,11 @@ function addItem(){
     checkIcon.className = "fa fa-check-square";
     checkIcon.style.color = "lightgray";
     checkIcon.addEventListener("click", function(){
-        checkIcon.style.color = "limegreen";
+        if(checkIcon.style.color == "limegreen"){
+            checkIcon.style.color = "lightgrey";
+        } else {
+            checkIcon.style.color = "limegreen";
+        }
     })
 
     divChild.appendChild(checkIcon);

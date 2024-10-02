@@ -30,6 +30,7 @@ body{
 }
 
 .user-input{
+    display: flex;
     width: 350px;
     text-align: center;
 }
@@ -54,6 +55,7 @@ body{
 }
 
 .user-input button{
+    margin-right: 10px;
     cursor: pointer;
     padding: 8px;
     width: fit-content;

@@ -2,8 +2,7 @@ const toDoItems = document.getElementsByClassName("to-do-items")[0];
 const input = document.getElementById("input");
 const delButton = document.querySelector(".delButton")
 
-delButton.style.backgroundColor = 'lightgreen';
-delButton.style.borderRadius = '5px'
+delButton.style.backgroundColor = 'lightgreen'; delButton.style.borderRadius = '5px'; delButton.style.whiteSpace = 'nowrap';
 
 input.addEventListener("keydown", function(event){ 
     if(event.key == "Enter"){

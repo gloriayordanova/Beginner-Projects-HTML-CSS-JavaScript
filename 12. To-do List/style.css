@@ -104,6 +104,11 @@ body{
     margin: 0 5px;
 }
 
+/* #delButton{
+    background-color: pink;
+    border-radius: 5px;
+} */
+
 @media(max-width:768px){
     .nav{
         align-items: center;

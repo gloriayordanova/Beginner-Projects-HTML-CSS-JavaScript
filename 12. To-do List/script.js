@@ -1,6 +1,7 @@
 const toDoItems = document.getElementsByClassName("to-do-items")[0];
 const input = document.getElementById("input");
 const delButton = document.querySelector(".delButton")
+const delButtonID = document.getElementById("buttondel");
 
 delButton.style.backgroundColor = 'lightgreen'; delButton.style.borderRadius = '5px'; delButton.style.whiteSpace = 'nowrap';
 
@@ -44,4 +45,8 @@ function addItem(){
     toDoItems.appendChild(divParent);
 
     input.value = '';
+
+    delButtonID.addEventListener("click", function(){
+        divParent.remove();
+    });
 }

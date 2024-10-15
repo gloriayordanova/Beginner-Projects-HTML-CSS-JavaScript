@@ -23,14 +23,11 @@ timerContainer.addEventListener("dblclick", function() {
 function startTimer() {
     if (timeBegan == null) { 
         timeBegan = new Date(); 
-        // console.log(timeBegan);
     }
     if (timeStopped != null) { 
         stoppedDuration += (new Date() - timeStopped);
-        // console.log(stoppedDuration)
     }
     startInterval = setInterval(clockRunning, 10);
-    // console.log(startInterval);
 }
 
 function stopTimer() {
@@ -41,14 +38,10 @@ function stopTimer() {
 function clockRunning() {
     let currentTime = new Date();
     let timeElapsed = new Date(currentTime - timeBegan - stoppedDuration);
-    // console.log(timeElapsed);
 
     let minutes = timeElapsed.getUTCMinutes();
-    // console.log(minutes);
     let seconds = timeElapsed.getUTCSeconds();
-    // console.log(seconds);
     let milliseconds = timeElapsed.getUTCMilliseconds();
-    // console.log(milliseconds);
 
     milliseconds = Math.floor(milliseconds / 10); 
 

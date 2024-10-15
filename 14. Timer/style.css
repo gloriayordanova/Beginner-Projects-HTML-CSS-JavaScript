@@ -7,7 +7,7 @@ body{
     background-color: yellowgreen;
     border: 5px solid gray;
     border-radius: 2px;
-    margin-top: 19%;
+    margin-top: 15%;
 }
 
 h1{
@@ -15,4 +15,18 @@ h1{
     text-align: center;
     font-size: 120px;
     margin: 0;
+}
+
+.start-stop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+    
+}
+
+#button-control{
+    width: 210px;
+    height: 120px;
+    font-size: xx-large;
 }

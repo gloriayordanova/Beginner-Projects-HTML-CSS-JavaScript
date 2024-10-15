@@ -43,6 +43,7 @@ function clockRunning() {
     let seconds = timeElapsed.getUTCSeconds();
     let milliseconds = timeElapsed.getUTCMilliseconds();
 
+
     milliseconds = Math.floor(milliseconds / 10); 
 
     document.getElementById("timer-display").innerHTML = 

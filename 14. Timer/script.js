@@ -4,8 +4,8 @@ let stoppedDuration = 0;
 let startInterval = null;
 let flag = false;
 
-const timerContainer = document.getElementsByClassName("timer-container")[0];
 const startEndBtn = document.getElementById("buttonControl");
+const reset = document.getElementById("reset");
 
 startEndBtn.addEventListener("click", function() { 
     if (!flag) {
@@ -17,7 +17,7 @@ startEndBtn.addEventListener("click", function() {
     }
 });
 
-timerContainer.addEventListener("dblclick", function() {
+reset.addEventListener("click", function() {
     resetTimer();
 });
 

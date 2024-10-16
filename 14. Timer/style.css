@@ -7,7 +7,7 @@ body{
     background-color: yellowgreen;
     border: 5px solid gray;
     border-radius: 2px;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 h1{
@@ -19,6 +19,7 @@ h1{
 
 .start-stop{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 180px;
@@ -29,4 +30,8 @@ h1{
     width: 210px;
     height: 120px;
     font-size: xx-large;
+}
+
+#reset{
+    margin-top: 35px;
 }

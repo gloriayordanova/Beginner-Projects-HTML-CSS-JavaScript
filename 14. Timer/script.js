@@ -5,8 +5,9 @@ let startInterval = null;
 let flag = false;
 
 const timerContainer = document.getElementsByClassName("timer-container")[0];
+const startEndBtn = document.getElementById("buttonControl");
 
-timerContainer.addEventListener("click", function() { 
+startEndBtn.addEventListener("click", function() { 
     if (!flag) {
         startTimer();
         flag = true;

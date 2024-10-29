@@ -37,11 +37,18 @@ body{
     color: white;
 }
 
-.current a::after{
+.current a::after {
     content: '_';
     background-color: white;
     font-size: 4px;
     display: block;
+    animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
 
 .wrapper{

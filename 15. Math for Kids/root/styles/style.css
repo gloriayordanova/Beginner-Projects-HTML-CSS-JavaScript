@@ -13,25 +13,25 @@ body{
     background-color: #fe4a49;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distributes space between title and nav links */
+    justify-content: space-between; 
 }
 
 .container h1 {
     color: white;
-    margin: 0; /* Removes unnecessary margin */
+    margin-left: 50px; 
 }
 
 .container ul {
     list-style-type: none;
     font-size: 20px;
-    display: flex; /* Makes items align horizontally */
-    gap: 20px; /* Adds spacing between items */
-    margin: 0; /* Removes unnecessary margin */
-    padding: 0;
+    display: flex; 
+    gap: 20px; 
+    margin: 0;
+    padding: 0px 30px 0px 30px;
 }
 
 .container li {
-    margin: 0;
+    margin: 0px;
 }
 
 .container a {

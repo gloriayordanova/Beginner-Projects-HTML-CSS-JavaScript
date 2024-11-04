@@ -5,24 +5,22 @@ const audio = document.getElementById("myAudio");
 let answer = 0;
 
 function generate_equation() {
-    let num2 = Math.floor(Math.random() * 12) + 1; // num2 is from 1 to 12
-    let multiplier = Math.floor(Math.random() * 12) + 1; // Random multiplier from 1 to 12
-    let num1 = num2 * multiplier; // Ensure num1 is a multiple of num2
+    let num2 = Math.floor(Math.random() * 12) + 1; 
+    let multiplier = Math.floor(Math.random() * 12) + 1; 
+    let num1 = num2 * multiplier;
 
-    answer = num1 / num2; // This will now always be an integer
+    answer = num1 / num2;
 
-    // Generate unique dummy answers
-    let dummyAnswer1 = Math.floor(Math.random() * 13); // Initial random dummy answer
+    let dummyAnswer1 = Math.floor(Math.random() * 13);
     while (dummyAnswer1 == answer) {
-        dummyAnswer1 = Math.floor(Math.random() * 13); // Regenerate if it matches the answer
+        dummyAnswer1 = Math.floor(Math.random() * 13);
     }
 
-    let dummyAnswer2 = Math.floor(Math.random() * 13); // Another random dummy answer
+    let dummyAnswer2 = Math.floor(Math.random() * 13);
     while (dummyAnswer2 == answer || dummyAnswer2 == dummyAnswer1) {
-        dummyAnswer2 = Math.floor(Math.random() * 13); // Regenerate if it matches answer or dummyAnswer1
+        dummyAnswer2 = Math.floor(Math.random() * 13);
     }
 
-    // Store and shuffle answers
     let allAnswers = [answer, dummyAnswer1, dummyAnswer2];
     let switchAnswers = [];
 
@@ -30,7 +28,6 @@ function generate_equation() {
         switchAnswers.push(allAnswers.splice(Math.floor(Math.random() * (i + 1)), 1)[0]);
     }
 
-    // Display the numbers and answers
     document.getElementById("num1").innerHTML = num1;
     document.getElementById("num2").innerHTML = num2;
 

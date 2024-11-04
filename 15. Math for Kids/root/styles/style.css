@@ -8,31 +8,33 @@ body{
     background-color: #e6e6ea;
 }
 
-.container{
+.container {
     padding: 20px;
-    overflow: hidden;
     background-color: #fe4a49;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distributes space between title and nav links */
 }
 
-.container h1{
-    float: left;
-    margin-left: 10%;
+.container h1 {
     color: white;
+    margin: 0; /* Removes unnecessary margin */
 }
 
-.container ul{
+.container ul {
     list-style-type: none;
     font-size: 20px;
-    margin-left: 60%;
+    display: flex; /* Makes items align horizontally */
+    gap: 20px; /* Adds spacing between items */
+    margin: 0; /* Removes unnecessary margin */
+    padding: 0;
 }
 
-.container li{
-    margin-top: 10px;
-    float: left;
-    padding: 0 20px 0 20px;
+.container li {
+    margin: 0;
 }
 
-.container a{
+.container a {
     text-decoration: none;
     color: white;
 }

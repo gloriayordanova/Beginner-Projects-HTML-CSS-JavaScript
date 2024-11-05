@@ -4,7 +4,16 @@ const option3 = document.getElementById("option3");
 const audio = document.getElementById("myAudio");
 let answer = 0;
 
-function generate_equation(){
+function showMessage(message) {
+    const messageElement = document.getElementById("message");
+    messageElement.innerHTML = message;
+    messageElement.style.display = "block"; 
+    setTimeout(() => {
+        messageElement.style.display = "none"; 
+    }, 2000); 
+}
+
+function generate_equation() {
     let num1 = Math.floor(Math.random() * 13);
     let num2 = Math.floor(Math.random() * 13);
     let dummyAnswer1 = Math.floor(Math.random() * 13);
@@ -19,7 +28,7 @@ function generate_equation(){
 
     allAnswers = [answer, dummyAnswer1, dummyAnswer2];
 
-    for(i = allAnswers.length; i--;){
+    for (let i = allAnswers.length; i--;) {
         switchAnswers.push(allAnswers.splice(Math.floor(Math.random() * (i + 1)), 1)[0]);
     }
 
@@ -28,24 +37,27 @@ function generate_equation(){
     option3.innerHTML = switchAnswers[2];
 }
 
-option1.addEventListener("click", function(){
-    if(option1.innerHTML == answer){
+option1.addEventListener("click", function () {
+    if (parseInt(option1.innerHTML) === answer) {
+        showMessage("👏Amazing!");
         generate_equation();
     } else {
         audio.play();
     }
 });
 
-option2.addEventListener("click", function(){
-    if(option2.innerHTML == answer){
+option2.addEventListener("click", function () {
+    if (parseInt(option2.innerHTML) === answer) {
+        showMessage("👏Awesome!");
         generate_equation();
     } else {
         audio.play();
     }
 });
 
-option3.addEventListener("click", function(){
-    if(option3.innerHTML == answer){
+option3.addEventListener("click", function () {
+    if (parseInt(option3.innerHTML) === answer) {
+        showMessage("👏Great!");
         generate_equation();
     } else {
         audio.play();

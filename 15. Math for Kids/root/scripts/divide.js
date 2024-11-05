@@ -4,6 +4,15 @@ const option3 = document.getElementById("option3");
 const audio = document.getElementById("myAudio");
 let answer = 0;
 
+function showMessage(message) {
+    const messageElement = document.getElementById("message");
+    messageElement.innerHTML = message;
+    messageElement.style.display = "block"; 
+    setTimeout(() => {
+        messageElement.style.display = "none"; 
+    }, 2000); 
+}
+
 function generate_equation() {
     let num2 = Math.floor(Math.random() * 12) + 1; 
     let multiplier = Math.floor(Math.random() * 12) + 1; 
@@ -38,6 +47,7 @@ function generate_equation() {
 
 option1.addEventListener("click", function () {
     if (option1.innerHTML == answer) {
+        showMessage("👏Amazing!");
         generate_equation();
     } else {
         audio.play();
@@ -46,6 +56,7 @@ option1.addEventListener("click", function () {
 
 option2.addEventListener("click", function () {
     if (option2.innerHTML == answer) {
+        showMessage("👏Awesome!");
         generate_equation();
     } else {
         audio.play();
@@ -55,6 +66,7 @@ option2.addEventListener("click", function () {
 option3.addEventListener("click", function () {
     if (option3.innerHTML == answer) {
         generate_equation();
+        showMessage("👏Great!");
     } else {
         audio.play();
     }

@@ -118,9 +118,8 @@ body{
     background-color: white;
 }
 
-.quotes {
-    background-image: url('/15. Math for Kids/root/images/Capture2.JPG');
-    background-size: cover;
+.quotesAddition {
+    background-image: url('/15. Math for Kids/root/images/CaptureAddition.JPG');
     background-position: center;
     background-attachment: fixed; /* Keeps the background in place when scrolling */
     margin: 0;
@@ -135,8 +134,53 @@ body{
 }
 
 .quotes-content {
-    background-color: rgba(0, 0, 0, 0.6); /* Black with 60% opacity */
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 8px;
     max-width: 80%;
+}
+
+.quotesSubtraction {
+    background-image: url('/15. Math for Kids/root/images/CaptureSubtraction.jpg');
+    background-position: center;
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.quotesMultiplication {
+    background-image: url('/15. Math for Kids/root/images/CaptureMultiplication.jpg');
+    background-position: center;
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.quotesDivision {
+    background-image: url('/15. Math for Kids/root/images/CaptureDivision.jpg');
+    background-position: center;
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
 }

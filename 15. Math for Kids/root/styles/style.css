@@ -190,10 +190,10 @@ body{
 }
 
 #message{
-    font-size: 4rem; /* Large font size */
-    color: #ff6347; /* Tomato color */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
-    animation: bounce 1s infinite; /* Animation */
+    font-size: 4rem; 
+    color: #ff6347; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    animation: bounce 1s infinite; 
 }
 
 @keyframes bounce {
@@ -201,6 +201,6 @@ body{
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-20px); /* Bounce effect */
+        transform: translateY(-20px);
     }
 }

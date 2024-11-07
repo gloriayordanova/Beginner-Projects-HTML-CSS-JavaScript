@@ -27,7 +27,6 @@ function loadImg() {
             for (let i = 0; i < data.results.length; i++) {
                 imageNodes[i] = document.createElement('div');
                 imageNodes[i].className = 'img';
-                // Fixed the issue with setting background image
                 imageNodes[i].style.backgroundImage = 'url(' + data.results[i].urls.raw + ')';
                 imageNodes[i].addEventListener('dblclick', function() {
                     window.open(data.results[i].links.download, '_blank');

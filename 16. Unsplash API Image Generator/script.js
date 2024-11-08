@@ -4,7 +4,7 @@ const grid = document.getElementsByClassName('grid')[0];
 window.addEventListener('load', dayNightMode);
 
 input.addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') {
+    if (event.key == 'Enter') {
         loadImg();
     }
 });

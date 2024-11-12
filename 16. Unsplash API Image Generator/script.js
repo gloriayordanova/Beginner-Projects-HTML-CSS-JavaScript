@@ -14,29 +14,29 @@ function loadImg() {
 
     const url = 'https://api.unsplash.com/search/photos?query=' + input.value + '&per_page=30&client_id=SouHY7Uul-OxoMl3LL3c0NkxUtjIrKwf3tsGk1JaiVo';
 
-    fetch(url) //Sends a GET request to the constructed URL.
-        .then(response => { //Processes the response object returned by the fetch call.
+    fetch(url) 
+        .then(response => { 
             console.log(response);
-            if (response.ok) { //Checks if the response status is in the 200–299 range, indicating a successful request.
-                return response.json();  //If the response is OK, it returns a promise that resolves with the parsed JSON data.
+            if (response.ok) { 
+                return response.json();  
             } else {
-                alert(response.status); //If the response is not OK (e.g., a 404 or 500 error), an alert is shown with the status code.
+                alert(response.status); 
             }
         })
-        .then(data => {  //data => { ... }: Processes the parsed JSON data from the API
-            const imageNodes = []; //Initializes an empty array to hold the div elements for each image.
-            for (let i = 0; i < data.results.length; i++) {  //Iterates through each result in data.results, where results contains an array of image objects from the API.
+        .then(data => {  
+            const imageNodes = []; 
+            for (let i = 0; i < data.results.length; i++) {  
                 imageNodes[i] = document.createElement('div');
                 imageNodes[i].className = 'img';
-                imageNodes[i].style.backgroundImage = 'url(' + data.results[i].urls.raw + ')';  //Sets the backgroundImage style of the div to display the image using the raw URL from the API.
+                imageNodes[i].style.backgroundImage = 'url(' + data.results[i].urls.raw + ')';  
                 imageNodes[i].addEventListener('dblclick', function() {
-                    window.open(data.results[i].links.download, '_blank'); //Opens a new tab with the direct download link for the image.
+                    window.open(data.results[i].links.download, '_blank'); 
                 });
-                grid.appendChild(imageNodes[i]); //Adds the div containing the image to the grid element.
+                grid.appendChild(imageNodes[i]); 
             }
         })
-        .catch(error => { //Catches any errors that occur during the fetch call or while processing the response.
-            console.error('Error fetching images:', error);  //Logs an error message to the console for debugging purposes.
+        .catch(error => { 
+            console.error('Error fetching images:', error);  
         });
 }
 
@@ -61,7 +61,7 @@ function dayNightMode() {
 
 
 
-/* Example response JSON:
+/* FYI Example response JSON:
 {
     "total": 1000,
     "total_pages": 100,

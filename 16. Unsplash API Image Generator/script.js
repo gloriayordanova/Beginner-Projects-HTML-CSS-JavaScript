@@ -38,7 +38,6 @@ function loadImg() {
         .catch(error => { //Catches any errors that occur during the fetch call or while processing the response.
             console.error('Error fetching images:', error);  //Logs an error message to the console for debugging purposes.
         });
-        //Summary: The loadImg function handles searching for images based on user input, clears previous results, sends an API request, processes and displays the results, and allows users to double-click an image to download it. It also includes basic error handling to log issues if the fetch operation fails.
 }
 
 function removeImages() {

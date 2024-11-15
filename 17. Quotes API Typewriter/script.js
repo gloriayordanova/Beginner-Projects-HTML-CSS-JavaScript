@@ -50,7 +50,11 @@ let textPosition = 0; //Keeps track of the position of the current character bei
 let flag = true; //A boolean flag to control the quote loading logic.
 
 loadQuote = () => {
-  const url = 'https://api.quotable.io/random';
+  const url = 'https://api.quotable.io/random';  
+  //above is the same as 
+  //const loadQuote = function() {
+     // const url = 'https://api.quotable.io/random';
+ //};
 
   fetch(url)
 

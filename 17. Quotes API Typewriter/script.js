@@ -60,7 +60,7 @@ loadQuote = () => {
    })
 
    .then(data => {
-      quoteArray[index] = data.content; //he response is converted to JSON and the content property (the quote text) is stored in quoteArray at position index.
+      quoteArray[index] = data.content; //the response is converted to JSON and the content property (the quote text) is stored in quoteArray at position index.
    })
 
    .catch(error => console.log(error));

@@ -1,10 +1,9 @@
 const input = document.getElementById('input');
 const grid = document.getElementsByClassName('grid')[0];
 
-// Create and style a loading indicator
 const loadingIndicator = document.createElement('div');
 loadingIndicator.id = 'loading-indicator';
-loadingIndicator.innerHTML = '<div class="spinner"></div>'; // Add a spinner icon
+loadingIndicator.innerHTML = '<div class="spinner"></div>'; 
 loadingIndicator.style.position = 'fixed';
 loadingIndicator.style.top = '50%';
 loadingIndicator.style.left = '50%';
@@ -12,7 +11,6 @@ loadingIndicator.style.transform = 'translate(-50%, -50%)';
 loadingIndicator.style.display = 'none';
 document.body.appendChild(loadingIndicator);
 
-// Add CSS for the spinner
 const style = document.createElement('style');
 style.textContent = `
     .spinner {
@@ -41,7 +39,7 @@ input.addEventListener('keydown', function(event) {
 
 function loadImg() {
     removeImages();
-    showLoading(); // Show loading indicator
+    showLoading(); 
 
     const url = 'https://api.unsplash.com/search/photos?query=' + input.value + '&per_page=30&client_id=SouHY7Uul-OxoMl3LL3c0NkxUtjIrKwf3tsGk1JaiVo';
 
@@ -51,11 +49,11 @@ function loadImg() {
                 return response.json();
             } else {
                 alert(response.status);
-                hideLoading(); // Hide loading on failure
+                hideLoading(); 
             }
         })
         .then(data => {
-            setTimeout(() => { // Wait 1.5 seconds before showing images
+            setTimeout(() => { 
                 const imageNodes = [];
                 for (let i = 0; i < data.results.length; i++) {
                     imageNodes[i] = document.createElement('div');
@@ -66,12 +64,12 @@ function loadImg() {
                     });
                     grid.appendChild(imageNodes[i]);
                 }
-                hideLoading(); // Hide loading when images are loaded
+                hideLoading(); 
             }, 1500);
         })
         .catch(error => {
             console.error('Error fetching images:', error);
-            hideLoading(); // Hide loading on error
+            hideLoading(); 
         });
 }
 

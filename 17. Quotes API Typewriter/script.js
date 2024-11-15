@@ -44,10 +44,10 @@
 
 
 
-let quoteArray = [];
-let index = 0; 
-let textPosition = 0; 
-let flag = true;
+let quoteArray = []; // An array to store the quotes fetched from the API.
+let index = 0; //Used as a pointer for the current quote in quoteArray. It remains 0 in this code.
+let textPosition = 0; //Keeps track of the position of the current character being displayed by the typewriter effect.
+let flag = true; //A boolean flag to control the quote loading logic.
 
 loadQuote = () => {
   const url = 'https://api.quotable.io/random';

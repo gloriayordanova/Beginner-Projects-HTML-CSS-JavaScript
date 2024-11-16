@@ -73,7 +73,7 @@ loadQuote = () => {
     flag = false;
   }
 
-  document.querySelector("#quote").innerHTML = quoteArray[index].substring(0, textPosition) + '<span>\u25AE</span>';
+  document.querySelector("#quote").innerHTML = quoteArray[index].substring(0, textPosition) + '<span><✨></span>';
 
   if(textPosition++ != quoteArray[index].length){
     setTimeout("typewriter()", 100);

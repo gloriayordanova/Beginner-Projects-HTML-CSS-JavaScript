@@ -44,17 +44,13 @@
 
 
 
-let quoteArray = []; // An array to store the quotes fetched from the API.
-let index = 0; //Used as a pointer for the current quote in quoteArray. It remains 0 in this code.
-let textPosition = 0; //Keeps track of the position of the current character being displayed by the typewriter effect.
-let flag = true; //A boolean flag to control the quote loading logic.
+let quoteArray = []; 
+let index = 0; 
+let textPosition = 0; 
+let flag = true;
 
 loadQuote = () => {
   const url = 'https://api.quotable.io/random';  
-  //above is the same as 
-  //const loadQuote = function() {
-     // const url = 'https://api.quotable.io/random';
- //};
 
   fetch(url)
 
@@ -64,29 +60,29 @@ loadQuote = () => {
    })
 
    .then(data => {
-      quoteArray[index] = data.content; //the response is converted to JSON and the content property (the quote text) is stored in quoteArray at position index.
+      quoteArray[index] = data.content; 
    })
 
    .catch(error => console.log(error));
 }
 
-  typewriter = () => {  //The typewriter() function controls the typewriter animation.
+  typewriter = () => {  
   if(flag){
-    loadQuote(); //If flag is true, it calls loadQuote() to fetch a new quote and appends an empty string to ensure the content is a string.
-    quoteArray[index] += ""; // Ensures the quote is treated as a string
-    flag = false; // Ensures `loadQuote()` runs only once at the start
+    loadQuote(); 
+    quoteArray[index] += ""; 
+    flag = false;
   }
 
-  document.querySelector("#quote").innerHTML = quoteArray[index].substring(0, textPosition) + '<span>\u25AE</span>'; //The document.querySelector("#quote").innerHTML line updates an HTML element with the ID quote to display the current portion of the quote with a blinking cursor (<span>\u25AE</span>).
+  document.querySelector("#quote").innerHTML = quoteArray[index].substring(0, textPosition) + '<span>\u25AE</span>';
 
-  if(textPosition++ != quoteArray[index].length){ //textPosition++ != quoteArray[index].length checks if the typewriter has reached the end of the current quote. If not, typewriter() is called again after 100 milliseconds.
+  if(textPosition++ != quoteArray[index].length){
     setTimeout("typewriter()", 100);
   }
   else{
-    quoteArray[index] = ' '; // Clears the current quote after it's been displayed
-    setTimeout("typewriter()", 4000); //Once the quote is fully displayed, the code waits for 4 seconds (setTimeout("typewriter()", 4000)) before resetting for the next quote.
-    textPosition = 0; //The textPosition is reset to prepare for the next cycle.
-    flag = true; //The flag is reset to prepare for the next cycle.
+    quoteArray[index] = ' ';
+    setTimeout("typewriter()", 4000);
+    textPosition = 0;
+    flag = true;
   }   
 }
 

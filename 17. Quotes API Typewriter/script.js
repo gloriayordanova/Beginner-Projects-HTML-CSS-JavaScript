@@ -40,46 +40,47 @@ window.addEventListener('load', typewriter);
 
 
 // Code below using a link, but that link is not working, but logic should be the same
-// let quoteArray = []; 
-// let index = 0; 
-// let textPosition = 0; 
-// let flag = true;
+/*let quoteArray = []; 
+let index = 0; 
+let textPosition = 0; 
+let flag = true;
 
-// loadQuote = () => {
-//   const url = 'https://api.quotable.io/random';  
+loadQuote = () => {
+  const url = 'https://api.quotable.io/random';  
 
-//   fetch(url)
+  fetch(url)
 
-//   .then(response => {
-//     if (!response.ok) throw Error(response.statusText);
-//       return response.json();
-//    })
+  .then(response => {
+    if (!response.ok) throw Error(response.statusText);
+      return response.json();
+   })
 
-//    .then(data => {
-//       quoteArray[index] = data.content; 
-//    })
+   .then(data => {
+      quoteArray[index] = data.content; 
+   })
 
-//    .catch(error => console.log(error));
-// }
+   .catch(error => console.log(error));
+}
 
-//   typewriter = () => {  
-//   if(flag){
-//     loadQuote(); 
-//     quoteArray[index] += ""; 
-//     flag = false;
-//   }
+  typewriter = () => {  
+  if(flag){
+    loadQuote(); 
+    quoteArray[index] += ""; 
+    flag = false;
+  }
 
-//   document.querySelector("#quote").innerHTML = quoteArray[index].substring(0, textPosition) + '<span><✨></span>';
+  document.querySelector("#quote").innerHTML = quoteArray[index].substring(0, textPosition) + '<span><✨></span>';
 
-//   if(textPosition++ != quoteArray[index].length){
-//     setTimeout("typewriter()", 100);
-//   }
-//   else{
-//     quoteArray[index] = ' ';
-//     setTimeout("typewriter()", 4000);
-//     textPosition = 0;
-//     flag = true;
-//   }   
-// }
+  if(textPosition++ != quoteArray[index].length){
+    setTimeout("typewriter()", 100);
+  }
+  else{
+    quoteArray[index] = ' ';
+    setTimeout("typewriter()", 4000);
+    textPosition = 0;
+    flag = true;
+  }   
+}
 
-// window.addEventListener('load', typewriter);
+window.addEventListener('load', typewriter);
+*/

@@ -39,7 +39,7 @@ window.addEventListener('load', typewriter);
 
 
 
-//Code below using a link, but that link is not working, but logic should be the same
+// Code below using a link, but that link is not working, but logic should be the same
 // let quoteArray = []; 
 // let index = 0; 
 // let textPosition = 0; 

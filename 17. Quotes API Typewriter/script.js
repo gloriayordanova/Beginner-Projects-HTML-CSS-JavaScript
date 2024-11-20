@@ -1,4 +1,5 @@
 let quoteArray = [];
+let imageArray = [];
 let index = 0; 
 let textPosition = 0; 
 let flag = true;
@@ -11,6 +12,14 @@ quoteArray = [
   "You learn more from failure than from success. Don't let it stop you. Failure builds character. - Unknown"
 ];
 
+imageArray = [
+  "images/Capture1.jpg",
+  "images/Capture2.jpg",
+  "images/Capture3.jpg",
+  "images/Capture4.jpg",
+  "images/Capture5.jpg"
+]
+
 typewriter = () => {
   if (flag) {
     index = Math.floor(Math.random() * quoteArray.length);
@@ -18,6 +27,8 @@ typewriter = () => {
   }
 
   document.querySelector("#quote").innerHTML = quoteArray[index].substring(0, textPosition) + '<span>▮</span>';
+  // document.querySelector("#image").src = imageArray[index];
+  document.querySelector("#quoteContainer").style.backgroundImage = `url('${imageArray[index]}')`;
 
   if (textPosition++ != quoteArray[index].length) {
     setTimeout(typewriter, 100);

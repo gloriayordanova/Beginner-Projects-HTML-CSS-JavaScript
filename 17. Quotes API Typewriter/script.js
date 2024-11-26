@@ -27,7 +27,6 @@ typewriter = () => {
   }
 
   document.querySelector("#quote").innerHTML = quoteArray[index].substring(0, textPosition) + '<span>▮</span>';
-  // document.querySelector("#image").src = imageArray[index];
   document.querySelector("#quoteContainer").style.backgroundImage = `url('${imageArray[index]}')`;
 
   if (textPosition++ != quoteArray[index].length) {
